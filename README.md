@@ -29,7 +29,7 @@ QMS主要面向中小企业和初创团队，QMS开发团队可以在以下方�
 |-----|---------| 
 |Asset| 媒体资源，本地音视频文件，远程音视频流，摄像头麦克风等采集设备，白板，文档以及素材和特效      |
 |Stream | Asset中的一个媒体流 |
-|Clip | Asset或者Stream的一个时间片段 |
+|Clip | Asset或者Stream的一个时间片段。如果通过Asset构建，可以通过to_multitrack，转化为Multitrack操作其中的Stream |
 |Track| 容纳Clip的实体，分为音视频轨道，字幕轨，贴图轨等，可以加入Multitrack，也可以作为Clip加入另一个Track   |
 |Multitrack| 容纳Track的实体, 包含多个音视频轨道，可以作为Clip加入一个Track，也可以作为Track加入另一个Multitrack    |
 |Timeline| Multitrack的根节点    |
